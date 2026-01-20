@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="shortcut icon" href="img/undraw_handshake-deal_nwk6.svg" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Tailwind CSS</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="p-3 flex justify-between relative">
+    <!-- Logo -->
+    <div class="logo text-2xl md:text-3xl font-bold flex justify-center items-center gap-2 text-blue-950">
+        <i class='bx bxl-tailwind-css text-blue-700'></i>
+        Tailwind CSS
+    </div>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex justify-center items-center">
+        <ul class="nav-links flex gap-5 text-lg font-semibold">
+            <li class="hover:text-slate-500 transition-all ease-in-out duration-300"><a href="#">Home</a></li>
+            <li class="hover:text-slate-500 transition-all ease-in-out duration-300"><a href="#about">About</a></li>
+            <li class="hover:text-slate-500 transition-all ease-in-out duration-300"><a href="#">Services</a></li>
+            <li class="hover:text-slate-500 transition-all ease-in-out duration-300"><a href="#">Contact</a></li>
+            <li class="btn md:px-3"><a href="#">Call Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Burger Icon -->
+    <div id="burger" class="hamburger text-3xl flex justify-center items-center md:hidden">
+        <i class='bx bx-menu-alt-right'></i>
+    </div>
+
+    <!-- Mobile Nav -->
+    <nav id="navbarMobile" class="hidden container absolute top-14 mx-auto max-w-sm p-4 flex-col justify-center items-center shadow-md md:hidden bg-white rounded-lg">
+        <ul class="flex flex-col gap-6 items-center justify-center text-slate-700 text-lg font-semibold">
+            <li class="hover:text-slate-300 transition-all ease-in-out duration-300"><a href="#">Home</a></li>
+            <li class="hover:text-slate-300 transition-all ease-in-out duration-300"><a href="#about">About</a></li>
+            <li class="hover:text-slate-300 transition-all ease-in-out duration-300"><a href="#">Services</a></li>
+            <li class="hover:text-slate-300 transition-all ease-in-out duration-300"><a href="#">Contact</a></li>
+            <li class="px-6 py-1 bg-orange-500 text-white rounded-full hover:bg-slate-700 transition-all ease-in-out duration-300"><a href="#">Call Me</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <!-- home section code -->
+    <section class="flex justify-center items-center my-10">
+    <div class="home-content container m-auto p-3 flex flex-col md:flex-row justify-between items-center gap-10 md:gap-5">
+        
+        <!-- Text block -->
+        <div class="home md:w-1/2 flex flex-col justify-center items-center gap-5">
+        <h2 class="font-black text-3xl">
+            Rapidly build modern websites without ever leaving your HTML.
+        </h2>
+        <p class="text-slate-700">
+            A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.
+        </p>
+        <p class="text-slate-700">
+            Tailwind is supported by incredible partners and sponsors who make it possible for a team of talented designers and engineers to maintain the framework full-time.
+        </p>
+        <a href="#" class="btn px-3 py-2 self-start">Learn More</a>
+        </div>
+
+        <!-- Image block -->
+        <div class="img md:w-1/2 flex md:justify-center justify-end items-center mt-6 md:mt-0">
+        <img src="img/undraw_handshake-deal_nwk6.svg" alt="handshake" class="w-3/4">
+        </div>
+        
+    </div>
+    </section>
+
+    <!-- comments section code -->
+     <section id="#about" class="flex justify-center items-center my-10">
+        <div class="comments-content container m-auto p-3">
+            <!-- title and des -->
+            <div class="titleandrow flex flex-col gap-5">
+                <h2 class="font-black text-2xl">"Built for the modern web."</h2>
+                <p class="text-slate-700">
+                    Tailwind is unapologetically modern, and takes advantage of all the latest and greatest CSS features to make the developer experience as enjoyable as possible.
+                </p>
+            </div>
+            <!-- comments -->
+            <div class="comments flex flex-col gap-5 md:flex-row justify-between items-center my-4">
+                <!-- comment -->
+                <div class="cmt flex flex-col gap-4 justify-center items-center text-center text-white bg-slate-500 p-5 rounded-md">
+                    <img src="https://i.pinimg.com/736x/30/01/1e/30011ec01f59434d761d323e0d4b5a07.jpg" class="rounded-full w-14" alt="logo">
+                    <h3 class="text-xl font-bold">Filters</h3>
+                    <p>What’s a website these days without a few backdrop blurs? Keep stacking filters until your designer asks you to please, please stop.</p>
+                </div>
+                <!-- comment -->
+                <div class="cmt flex flex-col gap-4 justify-center items-center text-center text-white bg-slate-500 p-5 rounded-md">
+                    <img src="https://i.pinimg.com/736x/30/01/1e/30011ec01f59434d761d323e0d4b5a07.jpg" class="rounded-full w-14" alt="logo">
+                    <h3 class="text-xl font-bold">Filters</h3>
+                    <p>What’s a website these days without a few backdrop blurs? Keep stacking filters until your designer asks you to please, please stop.</p>
+                </div>
+                <!-- comment -->
+                <div class="cmt flex flex-col gap-4 justify-center items-center text-center text-white bg-slate-500 p-5 rounded-md">
+                    <img src="https://i.pinimg.com/736x/30/01/1e/30011ec01f59434d761d323e0d4b5a07.jpg" class="rounded-full w-14" alt="logo">
+                    <h3 class="text-xl font-bold">Filters</h3>
+                    <p>What’s a website these days without a few backdrop blurs? Keep stacking filters until your designer asks you to please, please stop.</p>
+                </div>
+            </div>
+        </div>
+     </section>
+
+
+<!-- Footer -->
+<footer class="bg-orange-500 text-white p-6">
+  <div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+    
+    <!-- Left: Branding -->
+    <div class="text-center md:text-left">
+      <p class="font-semibold">&copy; 2026 Chedix. All Rights Reserved.</p>
+      <p class="text-sm mt-1">Powered by Chedix</p>
+    </div>
+    
+    <!-- Right: Navigation -->
+    <nav class="hidden md:block">
+      <ul class="flex flex-col md:flex-row text-center gap-4 text-md font-semibold">
+        <li>
+          <a href="#" class="hover:text-slate-200 transition-colors duration-300">Home</a>
+        </li>
+        <li>
+          <a href="#about" class="hover:text-slate-200 transition-colors duration-300">About</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-slate-200 transition-colors duration-300">Services</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-slate-200 transition-colors duration-300">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    
+  </div>
+</footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
