@@ -22,7 +22,7 @@
         <ul class="nav-links flex gap-5 text-lg font-semibold">
             <li class="hover:text-slate-500 transition-all ease-in-out duration-300"><a href="#">Home</a></li>
             <li class="hover:text-slate-500 transition-all ease-in-out duration-300"><a href="#about">About</a></li>
-            <li class="hover:text-slate-500 transition-all ease-in-out duration-300"><a href="https://google.com">Services</a></li>
+            <li class="hover:text-slate-500 transition-all ease-in-out duration-300"><a href="#services">Services</a></li>
             <li class="hover:text-slate-500 transition-all ease-in-out duration-300"><a href="#">Contact</a></li>
             <li class="btn md:px-3"><a href="#">Call Me</a></li>
         </ul>
@@ -38,7 +38,7 @@
         <ul class="flex flex-col gap-6 items-center justify-center text-slate-700 text-lg font-semibold">
             <li class="hover:text-slate-300 transition-all ease-in-out duration-300"><a href="#">Home</a></li>
             <li class="hover:text-slate-300 transition-all ease-in-out duration-300"><a href="#about">About</a></li>
-            <li class="hover:text-slate-300 transition-all ease-in-out duration-300"><a href="https://google.com">Services</a></li>
+            <li class="hover:text-slate-300 transition-all ease-in-out duration-300"><a href="#">Services</a></li>
             <li class="hover:text-slate-300 transition-all ease-in-out duration-300"><a href="#">Contact</a></li>
             <li class="px-6 py-1 bg-orange-500 text-white rounded-full hover:bg-slate-700 transition-all ease-in-out duration-300"><a href="#">Call Me</a></li>
         </ul>
@@ -72,7 +72,7 @@
     </section>
 
     <!-- comments section code -->
-     <section id="#about" class="flex justify-center items-center my-10">
+     <section id="about" class="flex justify-center items-center my-10">
         <div class="comments-content container m-auto p-3">
             <!-- title and des -->
             <div class="titleandrow flex flex-col gap-5">
@@ -105,40 +105,98 @@
         </div>
      </section>
 
+     <!-- services section code -->
+      <section id="services" class="flex flex-col justify-center items-center my-10">
+        <div class="container m-auto p-3 flex flex-col md:flex-row justify-center items-center gap-10">
+            <!-- img -->
+             <div class="img md:w-1/2 flex md:justify-center justify-center items-center mt-6 md:mt-0">
+                <img src="img/connect.svg" alt="connect" class="w-3/4">
+             </div>
+            <!-- title and des -->
+            <div class="titleandrow flex flex-col gap-5 md:w-1/2">
+                <h2 class="font-black text-2xl">Support the future of Tailwind CSS</h2>
+                <p class="text-slate-700">
+                    Tailwind CSS exists because a passionate community believes in building better software together. By becoming a Tailwind Insider or Partner you can directly support that mission — so we can keep shipping tools you love, with no strings attached.
+                </p>
+                <p class="text-slate-700">
+                    Tailwind CSS exists because a passionate community believes in building better software together. By becoming a Tailwind Insider or Partner you can directly support that mission — so we can keep shipping tools you love, with no strings attached.
+                </p>
+                <p class="text-slate-700">
+                    Tailwind CSS exists because a passionate community believes in building better software together. By becoming a Tailwind Insider or Partner you can directly support that mission — so we can keep shipping tools you love, with no strings attached.
+                </p>
+            </div>
+        </div>
+        <div  class="flex flex-col justify-center items-center my-10">
+            <!-- cards -->
+            <div class="cards container m-auto p-3 flex flex-col md:flex-row justify-center items-center gap-5">
+                <!-- card -->
+                <div class="card my-3 flex flex-col gap-4 justify-center items-center text-center bg-slate-500 text-white  p-5 rounded-md shadow-md">
+                    <img src="img/undraw_accomplishments_tb6k.svg" class="w-1/3" alt="">
+                    <h3 class="text-xl font-bold">Filters</h3>
+                    <p>What’s a website these days without a few backdrop blurs? Keep stacking filters until your designer asks you to please, please stop.</p>
+                </div>
+                <!-- card -->
+                <div class="card my-3 flex flex-col gap-4 justify-center items-center text-center bg-slate-500 text-white   p-5 rounded-md shadow-md">
+                    <img src="img/undraw_recruiter-suggestions_afdd.svg" class="w-1/4" alt="">
+                    <h3 class="text-xl font-bold">Filters</h3>
+                    <p>What’s a website these days without a few backdrop blurs? Keep stacking filters until your designer asks you to please, please stop.</p>
+                </div>
+                <!-- card -->
+                <div class="card my-3 flex flex-col gap-4 justify-center items-center text-center  bg-slate-500 text-white   p-5 rounded-md shadow-md">
+                    <img src="img/undraw_writing-online_x665.svg" class="w-1/3" alt="">
+                    <h3 class="text-xl font-bold">Filters</h3>
+                    <p>What’s a website these days without a few backdrop blurs? Keep stacking filters until your designer asks you to please, please stop.</p>
+                </div>
+            </div>
 
-<!-- Footer -->
-<footer class="bg-orange-500 text-white p-6">
-  <div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-    
-    <!-- Left: Branding -->
-    <div class="text-center md:text-left">
-      <p class="font-semibold">&copy; 2026 Chedix. All Rights Reserved.</p>
-      <p class="text-sm mt-1">Powered by Chedix</p>
+        </div>
+      </section>
+
+<!-- footer -->
+<footer class="bg-white text-slate-700 p-3">
+    <div class="container m-auto p-3">
+        <div class="flex flex-col md:flex-row justify-between md:items-center gap-5">
+            <!-- Logo and Description -->
+            <div class="flex flex-col gap-4 md:w-1/3">
+                <div class="logo text-xl font-bold flex items-center gap-2">
+                    <i class='bx bxl-tailwind-css text-blue-400'></i>
+                    Tailwind CSS
+                </div>
+                <p class="text-slate-300">
+                    A utility-first CSS framework packed with classes that can be composed to build any design, directly in your markup.
+                </p>
+            </div>
+            
+            <!-- Links -->
+            <div class=" flex flex-col justify-start gap-4 md:w-1/3">
+                <h3 class="font-bold text-lg">Quick Links</h3>
+                <ul class="flex flex-col gap-2 text-slate-300">
+                    <li><a href="#" class="hover:text-white transition-all ease-in-out duration-300">Home</a></li>
+                    <li><a href="#about" class="hover:text-white transition-all ease-in-out duration-300">About</a></li>
+                    <li><a href="#services" class="hover:text-white transition-all ease-in-out duration-300">Services</a></li>
+                    <li><a href="#contact" class="hover:text-white transition-all ease-in-out duration-300">Contact</a></li>
+                </ul>
+            </div>
+            
+            <!-- Social Media -->
+            <div class="flex flex-col gap-4 md:w-1/3">
+                <h3 class="font-bold text-lg">Follow Us</h3>
+                <div class="flex gap-4">
+                    <a href="#" class="text-2xl hover:text-blue-400 transition-all ease-in-out duration-300"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="text-2xl hover:text-blue-400 transition-all ease-in-out duration-300"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" class="text-2xl hover:text-blue-400 transition-all ease-in-out duration-300"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" class="text-2xl hover:text-blue-400 transition-all ease-in-out duration-300"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="mt-6 pt-8 text-center text-slate-300">
+            <p>&copy; 2024 Tailwind CSS. All rights reserved.</p>
+        </div>
     </div>
-    
-    <!-- Right: Navigation -->
-    <nav class="hidden md:block">
-      <ul class="flex flex-col md:flex-row text-center gap-4 text-md font-semibold">
-        <li>
-          <a href="#" class="hover:text-slate-200 transition-colors duration-300">Home</a>
-        </li>
-        <li>
-          <a href="#about" class="hover:text-slate-200 transition-colors duration-300">About</a>
-        </li>
-        <li>
-          <a href="#" class="hover:text-slate-200 transition-colors duration-300">Services</a>
-        </li>
-        <li>
-          <a href="#" class="hover:text-slate-200 transition-colors duration-300">Contact</a>
-        </li>
-      </ul>
-    </nav>
-    
-  </div>
 </footer>
-
 
     <script src="js/script.js"></script>
 </body>
-
 </html>
